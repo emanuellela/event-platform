@@ -13,7 +13,7 @@ export function Subscribe(){
 
   const [createSubscriber, {loading}]= useCreateSubscriberMutation()
 
-  async function handleSubscrible(event: FormEvent): Promise<void>{
+  async function handleSubscrible(event: FormEvent){
     event.preventDefault();
     await createSubscriber({
       variables:{
